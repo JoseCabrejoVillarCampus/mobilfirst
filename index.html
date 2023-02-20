@@ -1,33 +1,24 @@
-<!----------------------object-fit---------------------
+<!----------------------variables en CSS----------------
 
-La propiedad CSS object-fit indica cómo el contenido de un elemento reemplazado, 
-por ejemplo un <img> o <video>, debería redimensionarse para ajustarse a su contenedor.
-Se puede alterar la alineación del contenido del elemento reemplazado utilizando la 
-propiedad object-position.
+En CSS, las propiedades personalizadas (también conocidas como variables) son entidades 
+definidas por autores de CSS que contienen valores específicos que se pueden volver a 
+utilizar en un documento. Se establecen mediante la notación de propiedades personalizadas 
+(por ejemplo, --main-color: black;) y se acceden mediante la función var() (por ejemplo, 
+color: var (--main-color);).
 
-----------------Sintaxis---------------------
+Sitios web complejos tienen cantidades muy grandes de CSS, a menudo con una gran cantidad 
+de valores repetidos. Por ejemplo, el mismo color se puede utilizar en cientos de lugares 
+diferentes, lo cual requiere buscar y reemplazar globalmente si necesitamos cambiar ese color. 
+Las variables CSS permiten que un valor se almacene en un lugar y luego se haga referencia 
+en varios otros lugares. Un beneficio adicional son los identificadores semánticos. 
 
-La propiedad object-fit se especifica con una de las palabras claves elegidas de la 
-siguiente lista de valores.
+Por ejemplo --main-text-color es más fácil de entender que #00ff00, especialmente si este 
+mismo color también se utiliza en otro contexto.
+Las variables CSS están sujetas a la cascada, y heredan su valor de su padre.
 
-----------------Valores------------------------
+---------Herencia de propiedades personalizadas----------------
 
---contain: El contenido reemplazado está dimensionado para mantener su relación de aspecto 
-mientras se ajusta dentro del cuadro de contenido del elemento: su tamaño de objeto concreto 
-se resuelve como una restricción de contenido contra el ancho y la altura utilizados del elemento.
-
---cover: El contenido reemplazado se dimensiona para mantener su relación de aspecto mientras 
-llena el cuadro de contenido completo del elemento. Si la relación de aspecto del objeto no 
-coincide con la relación de aspecto de su caja, entonces el objeto se recortará para que se ajuste.
-
---fill: Modifica el tamaño del elemento remplazado para llenar el cuadro de contenido. El objeto 
-completo ocupará todo el espacio de la caja. Si el tamaño del elemento no concuerda con el de su 
-caja, se estirará para llenarlo.
-
---none: El contenido reemplazado no se redimensiona.
-
---scale-down: El contenido se dimensiona como si none o contain estuvieran especificados, lo que 
-resultaría en un tamaño de objeto concreto más pequeño.
-
+Las propiedades personalizadas heredan. Lo que significa que si no se establece ningún 
+valor para una propiedad personalizada en un elemento dado, se utiliza el valor de su elemento padre.
 
 -->>
