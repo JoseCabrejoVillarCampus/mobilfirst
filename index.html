@@ -1,28 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investigacion 20 de Febrerorder--1</title>
-</head>
-<body>
-    <h2>
-        Mobil First
-    </h2>
-    <p>
-        Mobile first, una forma de mejora progresiva, es un enfoque de desarrollo<br> 
-        y diseño web que se enfoca en la priorización del diseño y el desarrollo<br> 
-        para dispositivos móviles por encima del diseño y desarrollo para pantallas<br> 
-        de escritorio. El fundamento detrás del enfoque "mobile-first" es proveer al<br> 
-        usuario una buena experiencia para todos los tamaños de pantalla—empezando por<br> 
-        una experiencia de usuario que funcione bien para dispositivos pequeños, para<br> 
-        posteriormente, basada en dicha experiencia, continuar desarrollando para<br> 
-        enriquecer la experiencia de usuario conforme el tamaño de pantalla es mayor.<br> 
-        El enfoque "mobile-first" contrasta con el antiguo enfoque de diseño para<br> 
-        escritorio en el que se pensaba primero en el diseño/desarrollo para tamaños<br> 
-        de pantalla de escritorio y posteriormente se realizaban ajustes para conseguir<br> 
-        que dichos diseños y desarrollos funcionases correctamente en dispositivos móbilies.
-    </p>
-</body>
-</html>
+<!--RESPONSIVE DEISGN
+    
+Es la técnica que nos permite crear sitios adaptables a las condiciones del ordenador o dispositivo 
+desde donde se van a acceder, sobre todo en lo que tiene relación con la pantalla del sistema donde 
+se están visualizando. Aunque el término es suficientemente general como para poder referirse a una 
+adaptabilidad en torno a cualquier condición. En este artículo vamos a intentar aclarar el término 
+para que los lectores sepan bien a qué nos referimos.
+Antes de pensar en la web, podemos entender el término "responsive" en general. Es la característica 
+de un sistema que tiene respuesta hacia el medio que le rodea. No es algo específico de la web, sino
+que lo encontramos en el día a día. Por ejemplo, una luz que se enciende cuando alguna persona pasa 
+al lado, una puerta que se abre cuando nos situamos cerca para entrar o un semáforo que se pone en 
+rojo cuando pasa un coche a velocidad mayor de la permitida. Todo ello son sistemas "responsive", que 
+tienen una respuesta conforme al medio o las condiciones donde se encuentran.
+
+La traducción podría ser "Responsivo", que sí se encuentra en el diccionario de la Real Academia 
+Española y significa "Perteneciente o relativo a la respuesta". Sin embargo en términos de una página
+web sería más adecuado usar la palabra "Adaptable", pues la página es capaz de adaptarse al dispositivo
+u ordenador donde se encuentra. En fin, el término es suficientemente conocido en inglés como para
+usar la palabra "Responsive" y que todos los que vayan a leer este texto capten perfectamente a qué 
+nos referimos, por lo que preferimos no traducirlo.
+
+-----------------Marco actual donde surge el Responsive Web Design--------------------------------
+
+Tenemos que pensar en las condiciones actuales de la Web. Antes existían solo ordenadores donde se 
+consumían los contenidos y sin embargo hoy podemos consultar Internet en cualquier tipo de dispositivo. 
+Móviles, tablets, televisores, libros electrónicos, relojes e incluso neveras permiten acceder a la Web 
+y sus servicios. Son múltiples medios con distintas características y los diseñadores web deben preocuparse 
+porque los sitios se vean bien en cualquiera de ellos.
+
+----------------------¿Versión para móviles?--------------------------------------------------------
+
+Tradicionalmente en la web los sitios estaban optimizados para ordenadores de escritorio. Luego, al 
+popularizarse el acceso a Internet en móviles, o al introducirse el mercado de los tablets, lo habitual 
+era la existencia de diversas versiones de un mismo sitio, creadas y optimizadas específicamente para 
+teléfonos, tabletas y ordenadores personales.
+
+Aún seguimos viendo esa solución en la Internet de hoy e importantes sitios mantienen versiones distintas 
+para su web. Esa forma de trabajar era mayoritaria hasta el año 2010 aproximadamente, sin embargo, no es
+práctica. Nos obligaba a diseñar una web varias veces y mantener layouts para diversos tipos de dispositivos. 
+El trabajo por tanto se duplicaba o triplicaba y no solo el de creación del sitio, sino lo que es peor, el 
+de mantenimiento. Si el dueño de una web decidía crear una nueva sección, o reformular una existente, estaba 
+obligado a actualizar las webs de cada uno de los sistemas para los que había creado versiones distintas.
+
+Pero el problema se agravó con la llegada de la Internet en la televisión, en el coche, etc. ¿Qué nos toca? 
+¿hacer una versión web para cada uno de los dispositivos nuevos que vayan apareciendo? El camino no va por ahí.
+
+Para atender a las necesidades actuales y futuras, necesitamos crear sitios web que sean adaptables a cualquier 
+medio donde queramos consumirlas, presentes y futuros. Tener una única web es la mejor situación y justamente 
+la mejor ventaja que nos ofrece el "responsive".
+
+-------------------Tecnología que surge para cubrir las necesidades de adaptabilidad--------------------------
+
+Aparentemente, el trabajo de adaptar una web no es tan complicado, pero hace falta tecnología que nos permita
+realizarlo. En la segunda y tercera generación de sitios y antes de la implantación de las CSS3, teníamos pocas
+herramientas para conseguir la deseada adaptabilidad. Existían los diseños fluidos y en DesarrolloWeb.com ya 
+hablábamos de ellos en 2001, que en contraposición de los sistemas rígidos permitían tener layouts capaces de 
+utilizar todo el ancho de la pantalla. Era lo más parecido a un sitio responsive de hoy.
+
+Las páginas fluidas se construían con contenedores que tenían la anchura de la ventana donde estaban visualizándose. 
+Sin embargo, estaban pensados para que una web se viese bien en pantallas de 800, 1024 o 1280 píxeles de ancho. 
+No estaban ingenidados con las características de los móviles en la cabeza. Hacer que una tabla 
+(en aquel momento aún se llevaba la maquetación con tablas y se estaba comenzando a ver la maquetación con CSS) o 
+un elemento DIV tenga la anchura de la pantalla es muy sencillo, pues requiere solo un atributo de estilo, sin 
+embargo, conseguir que tu diseño se vea bonito en cualquier dimensión ya no es tan fácil.
+
+Sobre todo hay que pensar que con la llegada de los móviles el rango de dimensiones habituales de las pantallas 
+es mucho más abarcante. Tenemos pantallas que van desde los 300 píxeles de ancho a los 2000 y pico. Hoy incluso 
+hay pantallas que superan los 5000 píxeles de ancho. Si estiras un diseño concebido para 300 píxeles de ancho, 
+para llevarlo a dimensiones del doble de anchura, el triple, o más, en la mayoría de los casos tendrás un diseño 
+horrible. Como no había tecnología para poder crear sitios elásticos que se vieran bien en cualquier dimensión 
+de pantalla, los autores de web establan obligados a crear diferentes versiones de las páginas.
+
+En resumen, CSS3 vino para solucionar algunas de las necesidades actuales, por medio de nuevos atributos y 
+construcciones capaces de responder al entorno donde se encuentran. Nos referimos sobre todo a las Media Queries 
+o a atributos tan simples como max-width o min-width (aunque estos últimos pertenencen a CSS 2.1). Gracias a estas 
+utilidades somos capaces de reaccionar ante distintas circunstancias como la anchura de la pantalla, ventana o 
+contenedor donde están aquellos elementos a maquetar. Los veremos con calma a lo largo del Manual de Responsive 
+Web Design.
+
+-------------Origen del término Responsive Web Design----------------
+
+No podemos terminar este artículo sin dar crédito al diseñador que acuñó el término de "Responsive Web Design". 
+Se trata de Ethan Marcotte que publicó un post en "List Apart" y un libro donde explicaba todas las circunstancias
+y técnicas relacionadas con el diseño adaptable.
+
+Aunque es cierto que no fue el primer diseñador que pensó en la necesidad de adaptar el layout de las webs a las 
+diferentes pantallas (de hecho los creadores del estándar CSS ya habían creado tecnologías para producir sitios 
+adaptables), sí fue el primero en usar ese término que hoy es tan popular.-->>
